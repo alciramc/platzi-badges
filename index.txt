@@ -1,0 +1,54 @@
+// const element = document.createElement('h1');
+// element.innerText = 'Hello, Platzi Badges!';
+
+// const container = document.getElementById('app');
+
+// container.appendChild(element);
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+import "bootstrap/dist/css/bootstrap.css";
+import "./styles/styles.css";
+
+import Badge from "./components/badge";
+
+// const element = <h1>Hello, Platzi Badges!</h1>;
+
+// const name = "Alcira";
+// React.createElement(__qué__, __params__, __children__)
+// const element = React.createElement("h1", {}, `Hello, ${name}!`);
+// const element = React.createElement(
+//   "a",
+//   { href: "https://platzi.com", target: "_blank" },
+//   "Ir a platzi"
+// );
+
+// const sum = () => 3 + 3;
+
+// JSX ES MÁS CLARO
+// const jsx = <h1>Hola soy {name}</h1>;
+// const resultado = <h1>2 + 2 = {2 + 2}</h1>;
+// const funcion = <h1>Suma de 3 + 3 = {sum()}</h1>;
+
+// const body = (
+//   <div>
+//     <h1>Hola soy {name}</h1>
+//     <p>Soy desarrolladora web</p>
+//   </div>
+// );
+
+const container = document.getElementById("app");
+
+// ReactDOM.render(__qué__, __dónde__);
+// ReactDOM.render(element, container);
+ReactDOM.render(
+  <Badge
+    firstName="Ana"
+    lastName="Pérez"
+    avatarUrl="https://www.gravatar.com/avatar?d=identicon"
+    jobTitle="Dev"
+    twitter="anaperezosa"
+  />,
+  container
+);
